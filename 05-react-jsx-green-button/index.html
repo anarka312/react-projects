@@ -26,19 +26,18 @@
     ></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-
     <script type="text/babel">
-      <div class="app">
-      <button id="my-button" onclick="changeButton('my-button')">
-        click me
-      </button>
-       
-    </div>
+      const App = (
+        <div class="app">
+          <button id="my-button" onclick="changeButton('my-button')">
+            click me
+          </button>
+        </div>
+      );
 
       const container = document.getElementById('app');
       const root = ReactDOM.createRoot(container);
       root.render(helloWorldHeading);
     </script>
-    
   </body>
 </html>
