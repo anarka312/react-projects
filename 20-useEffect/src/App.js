@@ -10,7 +10,7 @@ function App() {
       .then((json) => setTodo(json));
   }, []);
 
-  return <div className="App"></div>;
+  return <div className="App">{todo && <h1>{todo.title}</h1>}</div>;
 }
 
 export default App;
